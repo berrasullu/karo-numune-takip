@@ -1,0 +1,2 @@
+ALTER TABLE `shipments` ADD `shippingMethod` enum('kargo','müşteri_alması','kargo_ve_müşteri') DEFAULT 'kargo' NOT NULL;--> statement-breakpoint
+ALTER TABLE `shipments` ADD `updatedAt` timestamp DEFAULT (now()) NOT NULL ON UPDATE CURRENT_TIMESTAMP;
